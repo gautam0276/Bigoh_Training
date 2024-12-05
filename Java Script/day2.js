@@ -15,3 +15,10 @@ else{
 }
 
 console.log(num);
+
+// else if is used to execute multiple condition
+
+const marks=76;
+if(marks<=80){
+    console.log("G")
+}
