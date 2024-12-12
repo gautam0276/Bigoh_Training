@@ -119,3 +119,21 @@
 // false falsy
 // objects MDM3
 
+
+// QUESTION N variables print krwane h 
+
+// function printSumOfVariables(...variables ){
+//     console.log(variables)
+//     let sum=0
+//     for(let i=0;i<variables.length;i++){
+//         sum+=variables[i]
+        
+       
+//     }
+    
+//     return sum
+    
+// }
+// console.log(printSumOfVariables(1,2,3,456,6,4,3,2))
+
+
