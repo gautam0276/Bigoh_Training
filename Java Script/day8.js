@@ -150,42 +150,102 @@
 
 
 
-    function name(callback){
-        setTimeout(()=>{
-            console.log("hello")
-            callback()
+//     function name(callback){
+//         setTimeout(()=>{
+//             console.log("hello")
+//             callback()
     
-        },2000)
-    }
+//         },2000)
+//     }
 
-    function name1(callback){
-        setTimeout(()=>{
-            console.log("Kunal")
-            callback()
+//     function name1(callback){
+//         setTimeout(()=>{
+//             console.log("Kunal")
+//             callback()
     
-        },2000)
-    }
+//         },2000)
+//     }
 
-    function name2(callback){
-        setTimeout(()=>{
-            console.log("Welcome to Delhi")
-            callback()
+//     function name2(callback){
+//         setTimeout(()=>{
+//             console.log("Welcome to Delhi")
+//             callback()
     
-        },2000)
-    }
+//         },2000)
+//     }
 
 
-for(let i=1;i<=5;i++){
-    name(function(){
-        name1(function(){
-            name2(function(){
-            setTimeout(()=>{
-                console.log( "Let's enjoy the Trip ")
-            }, 2000)  
+// for(let i=1;i<=5;i++){
+//     name(function(){
+//         name1(function(){
+//             name2(function(){
+//             setTimeout(()=>{
+//                 console.log( "Let's enjoy the Trip ")
+//             }, 2000)  
                 
-            })
-        })
-    })
-}
+//             })
+//         })
+//     })
+// }
+    
+// function fun(name){
+//     return new Promise((resolve,reject)=>{
+//       if("R"==name.charAt(0)){
+//           resolve([ {name:" hello "}])
+//       }
+//       else
+//       {
+//           reject(" by")
+//       }
+//     })  
+//     }
+    
+//     // console.log(fun("Rautam"))
     
     
+//     fun("Raj").then((data)=>{
+//         console.log(data)
+//     })
+//     .catch((data)=>{
+//         console.log(data)
+//     })
+    
+     
+
+// const obj={
+//     name:"gautam",
+//    address:{
+//        city: "Up"
+//    }
+// }
+
+// function fun(obj){
+   
+//    return new Promise((resolve, reject)=>{
+      
+//        if(obj.address.city =="New Delhi"  )
+//        {
+//         //    console.log(" resolve the problem")
+//            resolve("dfgh")
+//        }
+//        else
+//        {
+//         //    console.log("not resolve the problem")
+//            reject("dfghj")
+//        }
+//    })
+// }
+
+// fun(obj).then((data)=>{
+//    console.log(data)
+// })
+
+// .catch((data)=>{
+//    console.log(data)
+// })
+
+
+
+
+
+
