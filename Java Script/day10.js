@@ -107,6 +107,7 @@
 //     m.eatbanana()
 //     ani.shout()
 
+// over riding 
 
 class A{
     // let c 
@@ -121,8 +122,10 @@ class B{
         return a-b
     }
 }
+const objA=new A()
+console.log(objA.funAdd(5,3))
 const objB=new B()
-console.log(objB.funAdd(5,3))
+console.log(objB.funAdd(5,2))
 
 
 
@@ -141,14 +144,16 @@ console.log(objB.funAdd(5,3))
 
 
 
-class animal{
+// class animal{
 
-    login(){
-        console.log("login the app")
-    }
-    logout(){
-        console.log("")
-    }
+//     login(){
+//         console.log("login the app")
+//     }
+//     logout(){
+//         console.log("")
+//     }
 
     
-}
+// }
+
+
