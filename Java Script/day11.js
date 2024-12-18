@@ -535,6 +535,7 @@
    
 
 const grouped=Object.groupBy(students,(item)=>students.age)
+
 console.log(grouped)
 
 
