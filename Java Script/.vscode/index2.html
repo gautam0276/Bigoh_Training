@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        
+        header{
+
+        align-content: center;           
+            text-align: center;
+            font-size : 30px;
+            color:white;
+            background-color:lightskyblue;
+        }
+        main{ 
+            display: flex;  
+            color:Blue;
+            text-decoration: underline;
+        justify-content: space-between;
+            
+        }
+     
+        footer{
+            align-content: center;
+            text-align: center;
+            font-size: 40px;
+            color:white;
+            background-color:lightskyblue;
+        
+        }
+        #data{
+            background-color: paleturquoise;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1 id="heading">Title</h1>
+    <button onclick="changeText()"> click me</button>
+    <script>
+        function changeText(){
+            document.getElementById("heading").innerText="My Website"
+        }
+    </script>
+    </header>
+    <main>
+
+         
+    <div id="data">
+    <div>Home</div>
+    <div>Learn HTML</div>
+    <div>About Us </div>
+    </div>
+    
+
+    <div id="data1">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfvfdzlviNRbd_jUoULocgggXfwo1hS1sjEQ&s" target="_main" alt="Hope of Life" height="430px" width="420px">
+
+</div>
+
+
+</main>
+
+
+
+    
+
+    <footer>Footer
+    </footer>
+</body>
+</html>

@@ -216,6 +216,7 @@ let obj=[{
 }]
 
 
+obj.map((item)=>item)
 
 const values=Object.values(obj[0].address)
 console.log(values)
