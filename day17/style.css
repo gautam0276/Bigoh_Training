@@ -1,0 +1,48 @@
+/* 
+#buttonWrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  background-color: bisque;
+}
+
+#countView {
+  width: 100px;
+  height: 50px;
+  background-color: azure;
+  font-size: larger;
+  text-align: center;
+}
+
+#back,
+#next {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+} */
+
+#modifyCircle {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(14, 140, 183);
+  border-radius: 50%;
+  border: solid;
+  margin: auto;
+}
+
+#cardsDummy {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  height: 50px;
+  width: 40;
+  border: solid;
+  border-color: brown;
+  border-radius: 50%;
+}

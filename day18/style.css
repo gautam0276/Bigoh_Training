@@ -1,0 +1,51 @@
+/* #buttonWrapper{
+    display: flex;
+    justify-content: center;
+    gap: 40px;;
+    
+}
+
+#back,#next{
+    width: 100px;
+    height: auto;
+    background-color: black;
+    background: whitesmoke;
+}
+
+#countView{
+
+    background-color: brown;
+    background: white;
+    font-size:larger ;
+    height: auto;
+    width: auto;
+
+}
+
+#boxes{
+    background: white;
+    background-color: black;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+} */
+
+
+/* #movingCursor{
+    width: auto;
+    height: auto;
+    background-color: aliceblue;
+    padding: 20%;
+} */
+
+
+#square{
+    background-color: solid black  ;
+    background: rgb(228, 84, 84);
+    height: 300px;
+    width: 300px;
+    border-radius: 30%;
+    margin: auto;
+    
+}

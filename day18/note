@@ -1,0 +1,238 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="buttonWrapper">
+
+        <button id="back">Back</button>
+    
+        <span id="countView"></span>
+    
+        <button id="next">Next</button>
+      </div>
+
+      <div id="boxes"></div>
+
+      
+
+
+<script src="javaScript.js"></script>
+</body>
+
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<p id="demo"> This is a paragraph</p>
+<button type="button" onclick="document.getElementById('demo').innerHTML='Hello, World'"
+>click here </button>
+    
+
+<script src="javaScript.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript HTML Events</h1>
+    <h2> Check value is Uppercase or not </h2>
+
+    Enter your name:<input type="text" id="fname" onchange="upperCase()"
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate saepe expedita, deserunt asperiores porro delectus nisi ab reiciendis accusantium praesentium!</p>
+ <script>
+    function upperCase(){
+        const x=document.getElementById("fname")
+        x.value=x.value.toUpperCase()
+    }
+ </script>
+
+</body>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hover Testing</h1>
+    <h2>mouse Hover</h2>
+
+    <!-- <div id="movingCursor" onmouseover="mOver(this)" onmouseout="mOut(this)">
+      mouse Hover me
+    </div> -->
+
+    <script src="javaScript.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+<!-- <h1>Hover Testing</h1>
+    <h2>mouse Hover</h2>
+
+    <div id="movingCursor" onmouseover="mOver(this)" onmouseout="mOut(this)">
+      mouse Hover me
+    </div> -->
+
+
+
+<!-- important Notes -->
+
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+  <style>
+  #screen {
+  width: 200px;
+  height: 200px;
+  border:1px solid black ;
+  margin:20px auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px #eee;
+  transition: 0.5s;
+}
+</style>
+</head>
+
+<body>
+  <h1>DOM Demo</h1>
+  <button x="green">Click green</button>
+    <button x="red">Click red</button>
+  <button x="yellow">Click yellow</button>
+  <button x="orange">Click orange</button>
+  <button x="blue">Click blue</button>
+<div id="screen"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
+  //get Elements    const buttons = docume... by Ritesh Verma
+Ritesh Verma
+5:32 PM
+ 
+Plain Text
+//get Elements
+    const buttons = document.querySelectorAll('button') // [button1,button2.....]
+    const screen = document.querySelector('#screen') 
+
+//Event listner
+    buttons.forEach((button) => {
+      button.addEventListener('click', ()=>{handleClick(button.getAttribute('x'))});
+    });
+
+//function
+function handleClick(value){
+  screen.style.backgroundColor=value
+}
+ 
+  //get Elements    const buttons = docume... by Ritesh Verma
+Ritesh Verma
+6:05 PM
+ 
+Plain Text
+//get Elements
+    const buttons = document.querySelectorAll('button') // [button1,button2.....]
+    const screen = document.querySelector('#screen') 
+
+//Event listner
+    buttons.forEach((button) => {
+      button.addEventListener('click', ()=>{handleClick(button.getAttribute('x'))});
+    });
+//function
+function handleClick(value) {
+      for (let i = 0; i < value; i++) {
+        const card = document.createElement('div');
+        card.classList.add('card'); // Add the class correctly
+        screen.appendChild(card);
+      }
+    }
+ 
+  <!-- Online HTML, CSS and JavaScript edi... by Ritesh Verma
+Ritesh Verma
+6:05 PM
+ 
+Plain Text
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+  <style>
+  #screen {
+  width: 200px;
+  height: 200px;
+  border:1px solid black ;
+  margin:20px auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px #eee;
+  transition: 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.card{
+   width: 20px;
+  height: 20px;
+  border:1px solid black ;
+  margin:20px auto;
+  border-radius: 20px;
+}
+.name{
+  color: red;
+}
+</style>
+</head>
+
+<body>
+  <h1 class="name heading title">DOM Demo</h1>
+  <button x="1">Click green</button>
+    <button x="2">Click red</button>
+  <button x="3">Click yellow</button>
+  <button x="4">Click orange</button>
+  <button x="5">Click blue</button>
+<div id="screen">
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
