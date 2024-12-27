@@ -45,4 +45,9 @@ function setColor(){
 
 modifySquare.addEventListener("click" , setColor)
 
-
+const changeColor=document.querySelectorAll("colors")
+function changecolor(){
+    cardWrapper.forEach(setColor => {
+        
+    });
+}

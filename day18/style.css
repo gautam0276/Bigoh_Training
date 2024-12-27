@@ -47,5 +47,16 @@
     width: 300px;
     border-radius: 30%;
     margin: auto;
-    
+}
+
+#colors{
+    display: flex;
+    justify-content: center;
+}
+.CardWrapper{
+    height: auto;
+    width: auto;
+    background-color: black;
+    /* background: aqua; */
+    margin: auto;
 }
