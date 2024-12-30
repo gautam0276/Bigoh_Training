@@ -27,10 +27,6 @@
 // const updatedJsonString = JSON.stringify(person, null, 1);
 // console.log(updatedJsonString);
 
-
-
-
-
 // const jsonString= `{
 
 // "name":"gautam",
@@ -56,11 +52,6 @@
 // const updatedString=JSON.stringify(data,1)
 // console.log(updatedString)
 
-
-
-
-
-
 // function name(name){
 //     return promise= new Promise((resolve,reject)=>{
 //     if("G"==name.charAt(0))
@@ -72,17 +63,15 @@
 //         reject("reject error")
 //     }
 //     })
-    
+
 //     }
-    
+
 //     name("Gautam").then((data)=>{
 //     console.log(data)
 //     })
 //     .catch((data)=>{
 //         console.log(data)
 //     })
-
-
 
 // function fetchDataSuccessfully(){
 //     console.log("fetching Data")
@@ -100,9 +89,7 @@
 //                     reject("Data fetch failed")
 //                 },2000)
 //             }
-        
-            
-        
+
 //     })
 // }
 
@@ -112,7 +99,6 @@
 // .catch((data)=>{
 // console.log(data)
 // })
-
 
 // function steps(){
 //     return promise=new Promise((resolve,reject)=>{
@@ -124,7 +110,7 @@
 //         console.log("step 2 completed")
 //         resolve("step 2 completed"
 //         )
-//     },1000)    
+//     },1000)
 //     setTimeout(()=>{
 //         console.log("step 3 completed")
 //         resolve("step 3 completed")
@@ -135,9 +121,6 @@
 
 // steps()
 
-
-
-
 // function steps1(data){
 //     return promise= new Promise((resolve,reject)=>{
 //         setTimeout(()=>{
@@ -147,13 +130,12 @@
 //     })
 // }
 
-
 // function steps2(){
 //     return promise= new Promise((resolve,reject)=>{
 //         setTimeout(()=>{
 //             resolve("step 2 completed")
 //         },2000)
-        
+
 //     })
 // }
 
@@ -162,7 +144,7 @@
 //         setTimeout(()=>{
 //             resolve("step 3 completed")
 //         },3000)
-        
+
 //     })
 // }
 // async function stop(){
@@ -170,74 +152,53 @@
 //     console.log("nextLine")
 //     console.log(a);
 
-    
 //     const b=await steps2()
 //     console.log("nextLine")
 //     console.log(b);
 
-    
 //     const c=await steps3()
 //     console.log("lastLine")
 //     console.log(c);
 
-
 // }
-
-
 
 // stop()
 
-
-
-
-
-
-
-function steps3(){
-    return promise= new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("step 3 completed")
-        },3000)
-        
-    })
+function steps3() {
+  return (promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("step 3 completed");
+    }, 3000);
+  }));
 }
 
-function steps1(){
-    return promise= new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("step 1 completed")
-        },1000)
-
-    })
+function steps1() {
+  return (promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("step 1 completed");
+    }, 1000);
+  }));
 }
 
-
-function steps2(){
-    return promise= new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("step 2 completed")
-        },2000)
-        
-    })
+function steps2() {
+  return (promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("step 2 completed");
+    }, 2000);
+  }));
 }
-async function stop(){
-    
-    const c= steps3()
-    // console.log("lastLine")
-    console.log();
+async function stop() {
+  const c = steps3();
+  // console.log("lastLine")
+  console.log();
 
-    const a =  steps1()
-    // console.log("nextLine")
-    console.log(a);
+  const a = steps1();
+  // console.log("nextLine")
+  console.log(a);
 
-    
-    const b= steps2()
-    // console.log("nextLine")
-    console.log(b);
-
-
+  const b = steps2();
+  // console.log("nextLine")
+  console.log(b);
 }
 
-
-
-stop()
+stop();

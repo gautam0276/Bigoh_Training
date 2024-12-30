@@ -31,6 +31,7 @@ console.log(calculator(areaOfTraiangle, [2, 3]));
 // Question 3
 
 const addition = (...sum) => {
+  console.log(sum)
   return sum.reduce((acc, item) => acc + item, 0);
 };
 console.log(addition(5, 6, 2, 1));
@@ -172,6 +173,7 @@ obj = {
   keyThree: "value Three",
 };
 
+
 // url: "https://localhost:400";
 const queryString = new URLSearchParams(obj).toString();
 
@@ -180,6 +182,7 @@ const baseURL = "https://localhost:400";
 const https = `${baseURL} ${queryString}`;
 
 console.log(https);
+
 
 // question 11
 
@@ -376,3 +379,29 @@ console.log(numbers(0, 10));
 //     }
 //   }
 // }
+
+
+
+function calculate(a,b){
+return a,b
+}
+
+switch(calculate){
+case "+":
+  console.log("a+b")
+  break
+  case "-": 
+  console.log("a-b")
+  break
+  case "*":
+    console.log("a*b")
+    break
+    case "/":
+      console.log("a/b")
+      break
+      default:
+        console.log("error")
+        break
+}
+
+console.log(calculate(2,5))
