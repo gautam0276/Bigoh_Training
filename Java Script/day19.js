@@ -248,9 +248,7 @@ console.log(stucturedClone);
 
 // Ques 7
 
-const areaOfTraiangle1 = (base, height) => {
-  return (1 / 2) * base * height;
-};
+
 
 const areaOfSquare1 = (side) => {
   return side * side;
@@ -259,9 +257,12 @@ const areaOfSquare1 = (side) => {
 const calculator1 = (func, arg) => {
   return func(...arg);
 };
+const areaOfTriangle1=(base ,height){
+  return 1/2*base*height
+}
 
 console.log(calculator1(areaOfSquare, [6]));
-console.log(calculator1(areaOfTraiangle1, [2, 3]));
+console.log(calculator1(areaOfTriangle1, [2, 3]));
 
 // ques 1
 
@@ -405,3 +406,27 @@ case "+":
 }
 
 console.log(calculate(2,5))
+
+
+
+
+
+var expected = { foo: 5, bar: 6 };
+var actual = { foo: 8, bar: 6 };
+
+function compareObjects(expected,actual){
+ 
+  for(let key in expected){
+    if(expected[key] !== actual[key])
+      console.log("fail")
+  }
+  else if(expected[key]===actual[key]){
+    console.log("pass")
+  }
+else{
+  console.log("error")
+}
+
+}
+
+compareObjects()

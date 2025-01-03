@@ -60,18 +60,19 @@ let arr = [
   },
 ];
 
-const obj = {};
-
+const array=[]
 arr.forEach((element) => {
   const { batch_id, ...rest } = element;
-  if (obj[element.batch_id]) {
-    obj[element.batch_id].push(rest);
+  const obj = {};
+  if (obj[batch_id]) {
+    obj[batch_id].push(rest);
   } else {
-    obj[element.batch_id] = [rest];
+    obj[batch_id] = [rest];
   }
+  array.push(obj)
 });
 
-console.log(obj);
+console.log([array]);
 
 // for(let obj in obj){
 //     console.log()
@@ -136,9 +137,8 @@ obj2={
 }
 
 
-function mergeObject(){
+function mergeObject(key){
 for(let key in Object){
-
 }
 }
 console.log()
