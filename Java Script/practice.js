@@ -188,28 +188,26 @@ while(j<=num1){
 
 // spreadOperator(2,[3,4])
 
-class User {
-  constructor(username, password) {
-    this.username = username;
-    this.password = password;
-  }
-  // constructor is a function which is invoked/made when new keyword is used or a instance
-  //of class is made
+// class User {
+//   constructor(username, password) {
+//     this.username = username;
+//     this.password = password;
+//   }
+//   // constructor is a function which is invoked/made when new keyword is used or a instance
+//   //of class is made
 
-  encryptPassword() {
-    return `abc${this.password}`;
-  }
+//   encryptPassword() {
+//     return `abc${this.password}`;
+//   }
 
-  getPassword() {
-    return password;
-  }
-}
+//   getPassword() {
+//     return password;
+//   }
+// }
 
-const gautam = new User("Gautam", 1212);
+// const gautam = new User("Gautam", 1212);
 
-// console.log(gautam);
-
-
+// // console.log(gautam);
 
 
 
@@ -218,28 +216,102 @@ const gautam = new User("Gautam", 1212);
 
 
 
-const mor={
-    bird:"himanshu mor",
-    fly :function(){
-        console.log("flying")
-    }
-}
+
+
+// const mor={
+//     bird:"himanshu mor",
+//     fly :function(){
+//         console.log("flying")
+//     }
+// }
 
 
 
-Object.prototype.sayGautam = function (name) {
-    return `${name}Gautam is a Developer`;
-};
+// Object.prototype.sayGautam = function (name) {
+//     return `${name}Gautam is a Developer`;
+// };
 
-console.log(mor)
+// console.log(mor)
 
 
 
-const himanshu={
-    username:"Himanshu",
-    talk: function(){
-        console.log("talking")
-    }
-}
+// const himanshu={
+//     username:"Himanshu",
+//     talk: function(){
+//         console.log("talking")
+//     }
+// }
 
-console.log(himanshu)
+// console.log(himanshu)
+
+
+
+// let arr1=["gautam","ritesh"]
+// let arr2=arr1
+
+// arr1.push("ashish")
+
+// console.log(arr1)
+// console.log(arr2)
+
+
+// let arr1=[5,9,3,7]
+// let newArr=[5,8,7,2,2,3,6,9,5,12,4]
+// let arr2=[].concat(arr1,newArr)
+// // let arr2=arr1.slice(0).concat(newArr)
+// // let arr2=[...arr1,...newArr]
+
+// arr2.push("ashish","rajat")
+
+// console.log(arr1)
+// console.log(arr2)
+
+
+// let fruits=["apple","papaya","mango","litchi"]
+// let newArr1=fruits[0]
+// let newArr2=fruits[1]
+// for(let i=0;i<=fruits.length-1;i++){
+//     newArr.push(fruits[i].toUpperCase())
+// }
+// console.log(fruits)
+// console.log(newArr)
+// for(let fruit in fruits){
+//     newArr.push(fruits[fruit].toUpperCase())
+// }
+// console.log(newArr)
+
+// newArr1.push(fruits[0]);
+// newArr2.push(fruits[1]);
+
+// console.log(newArr1)
+// console.log(newArr2);
+
+// let [value1,value2]=fruits
+// console.log(value1)
+// console.log(value2);
+
+
+
+// const key1="objKey1"
+// const key2="objKey2"
+
+
+// const value1="myvalue1"
+// const value2="myvalue2"
+
+
+// const obj = {
+//   [key1]: value1,   // computed properties []
+//   [key2]: value2,
+// };
+
+// // obj[key1]=value1 
+// // obj[key2]=value2
+
+// console.log(obj)
+
+const arr1=[1,2,3,4,5,6,7,8,9]
+console.log(arr1)
+
+const newArr=[..."gautam"]
+console.log(newArr)

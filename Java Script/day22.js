@@ -1,11 +1,11 @@
-
+/*
 // arr= ([1, [2, [3, 4]], 5])
 
 function sumNestedArray(arr) {
   if (typeof arr === "number") {
     return arr;
   }
-  return arr.reduce((acc, item) => acc + sumNestedArray(item), 0);
+  return arr.reduce((acc, item) => acc + sumNestedArray(item), 0);  
 }
 
 console.log(sumNestedArray([1, [2, [3, 4]], 5]));
@@ -68,7 +68,7 @@ console.log(mergeObject(obj));
 
 
 
-
+*/
 
 // Ques 13
 
@@ -83,10 +83,23 @@ const obj1={
 }
 
 //  json.parse(json.stringify) ka use object ko clone krne k lie use hota h
-const newObj = JSON.parse(JSON.stringify(obj1));
-obj1.name="sushant"
+// const newObj = JSON.parse(JSON.stringify(obj1));
+// obj1.name="sushant"
+
+// console.log(obj1)
+// console.log(newObj)
+
+const newObj={...obj1}
+
+obj1.company="HCL"
 
 console.log(obj1)
 console.log(newObj)
+// const newObj=obj1.slice(0)
+// console.log(obj1)
+// console.log(newObj);
+
+
+
 
 
