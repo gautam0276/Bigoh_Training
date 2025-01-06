@@ -99,6 +99,9 @@ console.log(newObj)
 // console.log(obj1)
 // console.log(newObj);
 
+const newObject={..."12345"}
+console.log(newObject)
+
 
 
 

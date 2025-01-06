@@ -160,6 +160,7 @@ function newObject(obj) {
     } else {
       console.log(`${key}: ${value}`);
     }
+    
   }
 }
 

@@ -96,12 +96,12 @@ const areaOfSquare1 = (side) => {
   return side * side;
 };
 
-const calculator1 = (func, arg) => {
+const arr = (func, arg) => {
   return func(...arg);
 };
 const areaOfTriangle1=(base ,height){
   return 1/2*base*height
 }
 
-console.log(calculator1(areaOfSquare, [6]));
-console.log(calculator1(areaOfTriangle1, [2, 3]));
+console.log(arr(areaOfSquare, [6]));
+console.log(arr(areaOfTriangle1, [2, 3]));
