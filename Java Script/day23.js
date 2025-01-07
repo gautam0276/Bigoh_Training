@@ -95,53 +95,67 @@ const array = employees.map((employee) => {
     .filter((data) => data != undefined)
     .reduce((acc, item) => acc + item, 0);
 
+
+
   const totalRatingArray = projects.map((project) => {
     const isMyProject = project.hours.find(
       (record) => record.employee_id === employee.employee_id
     );
     if (isMyProject) return project.rating;
   });
+
+
   const totalRating = totalRatingArray
     .filter((data) => data != undefined)
     .reduce((acc, item) => acc + item, 0);
-  
 
-    const employeeProjects=projects.map((project)=>{
-      const hoursWorked=project.hours.find(
-        (record)=>record.employee_id===employee.employee.employee_id
-      )?hours_worked
-    })
-    return {
-        project_id: project.project_id,
-        name: project.name,
-        hours_worked: hoursWorked,
-        rating: project.rating,
-      };
+
+  const employeeProjects = projects.map((project) => {
+    const hoursWorked = project.hours.find(
+      (record) => record.employee_id === employee.employee_id
+    )
+    if(hoursWorked) return (project = {
+      project_id: project.project_id,
+      name: project.name,
+      hours_worked: hoursWorked.hours_worked,
+      rating: project.rating
     });
+  });
 
-  // const mergeObject=projects.map(project)=>{
-  //   const 
-  // }
-    
-    
-  // const ratings=projects.map(
-  //   (project)=>
-  //     project.hours.filter(
-  //       (record)=>record.employee_id === employee.employee_id
-  //     )[0]
-  //   )
-  //   const totalRating = ratings.filter((data)=> data!= undefined)
-  // console.log(totalRating,employee.employee_id)
+  const completeData=employeeProjects
+  .filter((data)=>data!=undefined)
 
-  // console.log(totalHours, "for", employee.employee_id);
+console.log(completeData);
+
   return {
     ...employee,
     totalWorkingHours: totalHours,
     averageRating:
       totalRating / totalRatingArray.filter((data) => data != undefined).length,
+
+    employeeData:
+      completeData
+    // project_id: projects.project_id,
+    //   name: projects.name,
+    //   hours_worked: hoursWorked,
+    //   rating: projects.rating,
   };
 });
 
+// const mergeObject=projects.map(project)=>{
+//   const
+// }
+
+// const ratings=projects.map(
+//   (project)=>
+//     project.hours.filter(
+//       (record)=>record.employee_id === employee.employee_id
+//     )[0]
+//   )
+//   const totalRating = ratings.filter((data)=> data!= undefined)
+// console.log(totalRating,employee.employee_id)
+
+// console.log(totalHours, "for", employee.employee_id);
 // employees.forEach((item)=>{
 
 // array.push(item)

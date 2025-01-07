@@ -315,3 +315,5 @@ console.log(arr1)
 
 const newArr=[..."gautam"]
 console.log(newArr)
+
+
