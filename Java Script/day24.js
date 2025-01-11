@@ -49,9 +49,7 @@ let projects = [
 
 
 const array = employees.map((employee) => {
-  const totalWorkingHours = projects.map(
-    (project) =>
-      project.hours.filter(
+  const totalWorkingHours = projects.map((project) => project.hours.filter(
         (record) => record.employee_id === employee.employee_id
       )[0]?.hours_worked
   );
@@ -168,7 +166,7 @@ function manageCompany(object, operation, key, info) {
 }
 console.log(
   manageCompany(data, "findEmployee", "Engineering", { id: 2 }),
-  manageCompany()
+  
 );
 
 //   details = data.company.departments.map((department) => {

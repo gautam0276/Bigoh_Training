@@ -210,14 +210,6 @@ while(j<=num1){
 // // console.log(gautam);
 
 
-
-
-
-
-
-
-
-
 // const mor={
 //     bird:"himanshu mor",
 //     fly :function(){
