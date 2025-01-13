@@ -1,5 +1,5 @@
 // Merge Intervals
-
+/*
 let arr = [
   [1, 3],
   [2, 6],
@@ -29,7 +29,7 @@ function mergeIntervals(arr) {
 }
 
 console.log(mergeIntervals(arr));
-
+*/
 // Event Emmiter
 
 class EventEmitter {
@@ -45,10 +45,13 @@ class EventEmitter {
   }
 
   emit(event, ...args) {
+    console.log(args)
     if (this.events[event]) {
       this.events[event].forEach((listener) => listener(...args));
+      
+      console.log(...args)
     }
-  }
+  }           
 
   off(event, listener) {
     if (this.events[event]) {
@@ -59,22 +62,26 @@ class EventEmitter {
         //   after removal
     }
   }
-  removeAllListeners(event) {
-    if (this.events[event]) {
-      delete this.events[event];
-    }
-  }
+  // removeAllListeners(event) {
+  //   if (this.events[event]) {
+  //     delete this.events[event];
+  //   }
+  // }
 }
 
 
 const emitter = new EventEmitter();
-const greet = (name) => console.log(`Hello, ${name}`);
-emitter.on("greet", greet);
-emitter.emit("greet", "Bob"); // Output: Hello, Alice
-emitter.off("greet", greet);
-emitter.emit("greet", "Alice"); // No output
-emitter.on("greet", greet);
-emitter.emit("greet", "Gautam"); // Output: Hello, Alice
-emitter.off("greet", greet);
-emitter.emit("greet", "Morrrr"); // No output
+const click = (here) => console.log(`click, ${here}`);
+emitter.on("click", click);
+emitter.on("click", click);
+emitter.on("click", click);
+emitter.on("click", click);
+emitter.on("click", click);
 
+emitter.emit("click", "here",'ok','ji'); // Output: Hello, Alice
+emitter.off("greet", click);
+// emitter.emit("greet", "Alice"); // No output
+// emitter.on("greet", greet);
+// emitter.emit("greet", "Gautam"); // Output: Hello, Alice
+// emitter.off("greet", greet);
+// emitter.emit("greet", "Morrrr"); // No output

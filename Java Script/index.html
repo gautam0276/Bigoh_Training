@@ -7,6 +7,58 @@
   </head>
   <body>
     <div></div>
-    <script src="day27.js"></script>
+    <script src="day28.js"></script>
+    <input type="text" id="inputField" placeholder="Type something..."/>
+    <button id="submitButton">Submit</button> 
+    <div id="searchResults"></div>
+
   </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div></div>
+
+    <-- Input field to type search queries -->
+    <!-- <input type="text" id="inputField" placeholder="Type something..." />
+    <button id="submitButton">Submit</button>
+    <div id="searchResults"></div>
+
+    <script>
+      // Debounce function to limit how often searchData is triggered
+      function debounce(func, delay) {
+        let timer;
+
+        return function (...args) {
+          clearTimeout(timer);
+
+          timer = setTimeout(() => {
+            func.apply(this, args);
+          }, delay);
+        };
+      }
+
+      // Function that handles the input event and updates the search results
+      function searchData(searchQuery) {
+        document.getElementById("searchResults").innerText = `Searching for: ${searchQuery}`;
+      }
+
+      // Attach the debounced event listener to the input field
+      const debouncedSearch = debounce((event) => searchData(event.target.value), 500);
+      document.getElementById("inputField").addEventListener("input", debouncedSearch);
+
+      // Optional: Function to handle the button click and trigger the search
+      document.getElementById("submitButton").addEventListener("click", function () {
+        const searchQuery = document.getElementById("inputField").value;
+        searchData(searchQuery);
+      });
+    </script>
+  </body>
+</html>  -->

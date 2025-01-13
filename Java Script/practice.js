@@ -309,3 +309,4 @@ const newArr=[..."gautam"]
 console.log(newArr)
 
 
+
