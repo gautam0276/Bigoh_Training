@@ -1,0 +1,31 @@
+
+#CardWrapper {
+  background: rgb(182, 226, 223);
+  /* height: 250px; */
+  /* width: 200px; */
+  border: black solid 3px;
+  margin: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  /* transition: 10ms; */
+}
+
+
+.card {
+  height: 220px;
+  width: 150px;
+  background-color: rgb(221, 210, 210);
+  border: rgb(0, 0, 0) solid 2px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-right: 14px;
+  align-items: center;
+
+  
+}

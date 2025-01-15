@@ -310,3 +310,6 @@ console.log(newArr)
 
 
 
+    //  const details = document.createElement("div");
+    //  const title = document.createElement("h3");
+    //  title.textContent = `Title: ${product.title}`;
